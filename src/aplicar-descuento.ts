@@ -1,12 +1,12 @@
-let precioIngresado: number = Number(prompt("ingrese precio"));
+let precioIngresado : number = Number(prompt("ingrese precio"));
 
-let cantidadDeProducto: number = Number(prompt("ingrese cantidad"));
+let cantidadDeProducto : number = Number(prompt("ingrese cantidad"));
 
 let precioNeto: number = precioIngresado * cantidadDeProducto;
 
-let porcentajeDescuento: number = 0.1;
+let porcentajeDescuento : number = 0.1;
 
-let descuentoAplicado: number = precioNeto * porcentajeDescuento;
+let descuentoAplicado : number = precioNeto * porcentajeDescuento;
 
 if (precioNeto > 1000) {
   let precioCondescuento: number = precioNeto - descuentoAplicado;
