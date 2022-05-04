@@ -16,7 +16,7 @@ for(let indice : number = numero1; indice <= numero2; indice++) {
   suma = suma + indice;
 }
 console.log(suma);
-*/
+
 
 let numero1: number = Number(prompt("ingrese el primer numero"));
 let numero2: number = Number(prompt("ingrese el segundo numero"));
@@ -30,3 +30,4 @@ for (let indice: number = numero1; indice >= numero2; indice--) {
   suma = suma + indice;
 }
 console.log(suma);
+*/
