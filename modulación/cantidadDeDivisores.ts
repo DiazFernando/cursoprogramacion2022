@@ -1,4 +1,4 @@
-//funcion para saber si es un numero es multiplo
+//funcion para saber un numero es multiplo
 function esMultiplo(dividendo: number, divisor: number): boolean {
   if (dividendo % divisor === 0) {
     return true;
@@ -20,13 +20,5 @@ function cantidadDeDivisores(numeroIngresado: number): number {
 }
 
 //variable para ingresar un numero por el usuario
-let numeroIngresado: number = Number(
-  prompt("ingrese un numero para saber cuantos divisores tiene:")
-);
-console.log(
-  "el numero " +
-    numeroIngresado +
-    " tiene " +
-    cantidadDeDivisores(numeroIngresado) +
-    " divisores"
-);
+let numeroIngresado: number = Number(prompt("ingrese un numero para saber cuantos divisores tiene:"));
+console.log("el numero " + numeroIngresado + " tiene " + cantidadDeDivisores(numeroIngresado) + " divisores");
