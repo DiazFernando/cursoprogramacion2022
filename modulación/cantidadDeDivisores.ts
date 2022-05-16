@@ -1,4 +1,4 @@
-//funcion para saber un numero es multiplo
+//funcion para saber si un numero es multiplo
 function esMultiplo(dividendo: number, divisor: number): boolean {
   if (dividendo % divisor === 0) {
     return true;
