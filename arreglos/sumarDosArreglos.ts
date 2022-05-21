@@ -1,9 +1,9 @@
 //primer arreglo que almacena los primeros 6 numeros ingresados por el usuario
-let vectores1: number = new Array(6);
+let vectores1: number [] = new Array(6);
 //segundo arreglo que almacena el segundo bloque de 6 numeros ingresados por el usuario
-let vectores2: number = new Array(6);
+let vectores2: number [] = new Array(6);
 //arreglo que almacena la suma de los numeros ingresados por el usuario
-let sumaDeVectores: number = new Array(6);
+let sumaDeVectores: number [] = new Array(6);
 
 //bucle para ingresar los primeros 6 numeros al primer arreglo vectores1
 for (let indice: number = 0; indice < 6; indice++) {
