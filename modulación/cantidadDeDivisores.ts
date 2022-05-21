@@ -12,7 +12,7 @@ function cantidadDeDivisores(numeroIngresado: number): number {
   let cantidad: number = 0;
   let contador: number;
   for (contador = 0; contador <= numeroIngresado; contador++) {
-    if (esMultiplo(numeroIngresado, contador) === true) {
+    if (esMultiplo(numeroIngresado, contador)) {
       cantidad++;
     }
   }
@@ -20,6 +20,13 @@ function cantidadDeDivisores(numeroIngresado: number): number {
 }
 
 //variable para ingresar un numero por el usuario
-let numeroIngresado: number = Number(prompt("ingrese un numero para saber cuantos divisores tiene:"));
-console.log("el numero " + numeroIngresado + " tiene " + cantidadDeDivisores(numeroIngresado) + " divisores"
+let numeroIngresado: number = Number(
+  prompt("ingrese un numero para saber cuantos divisores tiene:")
+);
+console.log(
+  "el numero " +
+    numeroIngresado +
+    " tiene " +
+    cantidadDeDivisores(numeroIngresado) +
+    " divisores"
 );
