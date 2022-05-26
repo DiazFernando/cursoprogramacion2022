@@ -17,8 +17,8 @@ function calcularPromedio (nota1:number,nota2:number,nota3:number):number {
 //Función para buscar un alumno
 function buscarAlumno (alumnoBuscado:string,nombresDeAlumnos:string[],numeroDeAlumnos:number):number {
 let indice: number = 0;
-let posiciónDelAlumno:number = 0; 
-while (indice < numeroDeAlumnos && posiciónDelAlumno === 0) {
+let posiciónDelAlumno:number = -1; 
+while (indice < numeroDeAlumnos && posiciónDelAlumno === -1) {
   if (nombresDeAlumnos[indice] === alumnoBuscado) {
       posiciónDelAlumno=indice;
     }
@@ -44,7 +44,7 @@ let alumnoBuscado: string = prompt("Ingrese el nombre del alumno que esta buscan
 //variable para guardar la posición del alumno buscado dentro del arreglo nombres nombresDeAlumnos
 let indiceDelAlumno:number = buscarAlumno(alumnoBuscado,nombresDeAlumnos,numeroDeAlumnos);
 //condicion para imprimir por consola el promedio anual del alumno buscado
-if (indiceDelAlumno !== 0) {
+if (indiceDelAlumno !== -1) {
   console.log("El promedio anual de " + alumnoBuscado + " es " + calcularPromedio(notasTrimestre1[indiceDelAlumno],notasTrimestre2[indiceDelAlumno],notasTrimestre3[indiceDelAlumno]));
 } else {
   console.log("No se encontro al alumno " + alumnoBuscado);
