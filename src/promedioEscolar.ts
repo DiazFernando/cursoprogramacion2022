@@ -1,7 +1,7 @@
 //Variable para ingresar la cantidad de alumnos
 let numeroDeAlumnos: number = Number(prompt("Ingrese cantidad de Alumnos"));
 //Arreglo que almacena el nombre de los alumnos ingresados por el usuario
-let nombresDelAlumnos: string[] = new Array(numeroDeAlumnos);
+let nombresDeAlumnos: string[] = new Array(numeroDeAlumnos);
 //Arreglo que almacena las notas del primer trimestre
 let notasTrimestre1: number[] = new Array(numeroDeAlumnos);
 //Arreglo que almacena las notas del segundo trimestre
@@ -11,7 +11,7 @@ let notasTrimestre3: number[] = new Array(numeroDeAlumnos);
 
 //Bucle para ingresar los datos ingresados por el usuario a los distintos arreglos
 for (let indice: number = 0; indice < numeroDeAlumnos; indice++) {
-  nombresDelAlumnos[indice] = prompt("Ingrese nombre del Alumno");
+  nombresDeAlumnos[indice] = prompt("Ingrese nombre del Alumno");
   notasTrimestre1[indice] = Number(prompt("Ingrese nota del primer trimestre"));
   notasTrimestre2[indice] = Number(
     prompt("Ingrese nota del segundo trimestre")
@@ -31,7 +31,7 @@ let encontrado: boolean = false;
 let promedioAnual: number = 0;
 //Bucle para encontrar la posición del alumno buscado
 while (posición < numeroDeAlumnos && !encontrado) {
-  if (nombresDelAlumnos[posición] === alumnoBuscado) {
+  if (nombresDeAlumnos[posición] === alumnoBuscado) {
     encontrado = true;
     promedioAnual =
       (notasTrimestre1[posición] +
